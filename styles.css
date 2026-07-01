@@ -508,22 +508,26 @@ h2 {
   align-items: center;
 }
 
-.client-placeholders {
+.client-logos {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
 }
 
-.client-placeholders span {
+.client-logo {
   display: grid;
-  min-height: 96px;
+  min-height: 112px;
+  padding: 22px;
   place-items: center;
-  color: #8a9491;
-  font-size: 0.8rem;
-  font-weight: 900;
-  background: rgba(255, 255, 255, 0.7);
-  border: 1px dashed #b9c5c1;
-  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.client-logo img {
+  width: min(100%, 178px);
+  height: 58px;
+  object-fit: contain;
 }
 
 .cta-band {
@@ -807,8 +811,7 @@ h2 {
   }
 
   .method-grid,
-  .sector-list,
-  .client-placeholders {
+  .sector-list {
     grid-template-columns: 1fr;
   }
 }
