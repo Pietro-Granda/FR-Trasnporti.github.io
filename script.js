@@ -1,6 +1,6 @@
 const translations = {
   it: {
-    "nav.company": "Chi siamo",
+    "nav.company": "Chi Siamo",
     "nav.services": "Servizi",
     "nav.method": "Metodo",
     "nav.sectors": "Settori",
@@ -16,10 +16,10 @@ const translations = {
     "quick.item2.copy": "Presenza concreta nelle attività quotidiane.",
     "quick.item3.title": "Spazi flessibili",
     "quick.item3.copy": "Soluzioni adatte a esigenze brevi o continuative.",
-    "intro.kicker": "Chi siamo",
+    "intro.kicker": "Chi Siamo",
     "intro.title": "Una storia costruita sul campo, una crescita che continua.",
     "intro.lede": "Ogni grande progetto nasce da una scelta coraggiosa. Frascarelli Trasporti nasce nel 2022 dalla volontà di trasformare determinazione, sacrificio e passione in un'azienda capace di offrire servizi logistici affidabili, efficienti e orientati alla qualità.",
-    "intro.copy1": "Grazie a un costante impegno, alla passione per il nostro lavoro e alla volontà di crescere, l'azienda ha conosciuto una rapida evoluzione. Oggi il nostro core business è la gestione delle consegne dell'ultimo miglio, affiancata da servizi di trasporto, movimentazione e deposito merci, oltre alla riparazione di bancali.",
+    "intro.copy1": "Grazie a un costante impegno, alla passione per il nostro lavoro e alla volontà di crescere, l'azienda ha conosciuto una rapida evoluzione. Oggi il nostro core business è la gestione delle consegne dell' last mile, affiancata da servizi di trasporto, movimentazione e deposito merci, oltre alla riparazione di bancali.",
     "intro.copy2": "I risultati raggiunti confermano il nostro percorso: oltre 350.000 consegne di pacchi effettuate nell'ultimo anno, frutto di un'organizzazione solida e di un team che ogni giorno lavora con professionalità e puntualità.",
     "intro.copy3": "Crediamo che la crescita nasca dal coraggio di affrontare nuove sfide: la voglia di costruire qualcosa di grande è sempre stata più forte della paura di rischiare. È questo spirito che continua a guidare Frascarelli Trasporti verso nuovi traguardi.",
     "intro.growth.eyebrow": "Il nostro percorso",
