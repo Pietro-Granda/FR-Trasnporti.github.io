@@ -282,6 +282,119 @@ svg {
   background: var(--paper);
 }
 
+.story-heading {
+  width: min(880px, 100%);
+}
+
+.story-lede {
+  max-width: 760px;
+  margin: 24px 0 0;
+  color: var(--muted);
+  font-size: 1.16rem;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.7fr) minmax(0, 1.3fr);
+  gap: clamp(32px, 6vw, 76px);
+  align-items: stretch;
+}
+
+.story-origin {
+  display: grid;
+  align-content: start;
+  gap: 20px;
+  padding: 8px 0 8px 26px;
+  border-left: 3px solid var(--green);
+}
+
+.story-origin p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.growth-panel {
+  position: relative;
+  overflow: hidden;
+  padding: 34px;
+  color: var(--paper);
+  background: var(--ink);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.growth-panel::after {
+  position: absolute;
+  right: -70px;
+  bottom: -100px;
+  width: 260px;
+  height: 260px;
+  content: "";
+  border: 52px solid rgba(0, 141, 78, 0.18);
+  border-radius: 50%;
+}
+
+.growth-panel-heading,
+.growth-list {
+  position: relative;
+  z-index: 1;
+}
+
+.growth-panel-heading span {
+  display: block;
+  margin-bottom: 8px;
+  color: #7ee0ae;
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.growth-panel-heading h3 {
+  margin: 0;
+  font-size: clamp(1.65rem, 3vw, 2.25rem);
+  line-height: 1.08;
+}
+
+.growth-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.growth-item {
+  min-height: 190px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 6px;
+}
+
+.growth-number {
+  display: block;
+  min-height: 2.7em;
+  margin-bottom: 18px;
+  color: #7ee0ae;
+  font-size: clamp(1.15rem, 2vw, 1.55rem);
+  font-weight: 900;
+  line-height: 1.08;
+  letter-spacing: 0.02em;
+}
+
+.growth-item h4 {
+  margin: 0 0 9px;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.growth-item p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}
+
 .intro-grid,
 .contact-grid,
 .operations-grid,
@@ -679,6 +792,7 @@ h2 {
 
   .quick-strip,
   .intro-grid,
+  .story-grid,
   .contact-grid,
   .operations-grid,
   .clients-grid,
@@ -730,6 +844,8 @@ h2 {
     width: 100%;
     padding: 2px 0 6px;
     gap: 16px;
+    justify-content: flex-start;
+    overflow-x: auto;
     scrollbar-width: thin;
   }
 
@@ -739,6 +855,14 @@ h2 {
 
   .hero {
     padding-top: 220px;
+  }
+
+  .growth-list {
+    grid-template-columns: 1fr;
+  }
+
+  .growth-item {
+    min-height: 0;
   }
 }
 
@@ -847,6 +971,8 @@ h2 {
 
   .hero-copy,
   .intro-copy p,
+  .story-lede,
+  .story-origin p,
   .operations p,
   .clients p,
   .contact p {
