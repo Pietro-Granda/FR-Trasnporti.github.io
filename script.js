@@ -1,378 +1,152 @@
 const translations = {
   it: {
-    "nav.company": "Chi Siamo",
-    "nav.services": "Servizi",
-    "nav.method": "Metodo",
-    "nav.sectors": "Settori",
-    "nav.clients": "Clienti",
-    "nav.contact": "Contatti",
-    "hero.eyebrow": "Logistica concreta per le imprese",
-    "hero.title": "La merce si muove con ordine.",
-    "hero.copy": "Frascarelli Trasporti segue i flussi logistici con precisione, puntualità e un'organizzazione facile da gestire.",
-    "hero.cta": "Richiedi un contatto",
-    "quick.item1.title": "Tempi coordinati",
-    "quick.item1.copy": "Percorsi e finestre operative ben pianificati.",
-    "quick.item2.title": "Supporto sul campo",
-    "quick.item2.copy": "Presenza concreta nelle attività quotidiane.",
-    "quick.item3.title": "Spazi flessibili",
-    "quick.item3.copy": "Soluzioni adatte a esigenze brevi o continuative.",
-    "intro.kicker": "Chi Siamo",
-    "intro.title": "",
-    "intro.lede": "Frascarelli Trasporti è un partner logistico specializzato nella gestione delle consegne last mile e nei servizi di trasporto. Operiamo ogni giorno con processi efficienti, personale qualificato e un’organizzazione orientata alla puntualità e alla qualità del servizio.",
-    "intro.copy1": "Collaboriamo con importanti operatori del settore logistico, contribuendo ogni giorno alla gestione di migliaia di spedizioni destinate ai clienti finali.",
-    "intro.copy2": "Oltre 350.000 consegne completate nell’ultimo anno testimoniano il nostro impegno nel garantire affidabilità, precisione e continuità operativa.",
-    "intro.copy3": "La nostra missione è supportare la crescita dei nostri partner attraverso soluzioni logistiche efficienti, flessibili e scalabili.",
-    "intro.growth.eyebrow": "Il nostro percorso",
-    "intro.growth.title": "Il coraggio di crescere.",
-    "intro.growth.item1.title": "La nascita",
-    "intro.growth.item1.copy": "L'inizio di un progetto costruito con determinazione e passione.",
-    "intro.growth.item2.title": "Consegne in un anno",
-    "intro.growth.item2.copy": "Pacchi consegnati con professionalità, precisione e puntualità.",
-    "intro.growth.item3.value": "Ultimo miglio",
-    "intro.growth.item3.title": "Il nostro core business",
-    "intro.growth.item3.copy": "Una gestione affidabile dell'ultima fase della consegna.",
-    "services.kicker": "Servizi",
-    "services.title": "Interventi costruiti sulle tue esigenze logistiche.",
-    "services.transport.title": "Trasporti, consegna e ritiro",
-    "services.transport.copy": "Ritiriamo la merce dal fabbricante e la consegniamo al cliente, coordinando tempi, percorsi e passaggi operativi.",
-    "services.transport.point1": "Ritiro presso produttori e fornitori",
-    "services.transport.point2": "Consegna verso clienti e magazzini",
-    "services.transport.point3": "Coordinamento delle finestre operative",
-    "services.loading.title": "Carico e scarico",
-    "services.loading.copy": "Quando la merce arriva in magazzino, scarichiamo, organizziamo gli ordini e prepariamo il carico per la fase successiva.",
-    "services.loading.point1": "Scarico merci in ingresso",
-    "services.loading.point2": "Preparazione ordini e colli",
-    "services.loading.point3": "Carico per consegna o trasferimento",
-    "services.storage.title": "Deposito",
-    "services.storage.copy": "Custodiamo la merce in deposito per trasferimenti rapidi o periodi più lunghi, mantenendo ordine e controllo sugli spazi.",
-    "services.storage.point1": "Deposito temporaneo per transito",
-    "services.storage.point2": "Soluzioni per permanenze più lunghe",
-    "services.storage.point3": "Organizzazione della merce pronta alla ripartenza",
-    "services.lastmile.title": "Last mile",
-    "services.lastmile.copy": "Gestiamo l'ultimo tratto della consegna, portando la merce dal punto logistico fino alla destinazione finale.",
-    "services.lastmile.point1": "Consegne finali verso clienti e punti vendita",
-    "services.lastmile.point2": "Coordinamento degli orari di consegna",
-    "services.lastmile.point3": "Supporto operativo per consegne locali",
-    "method.kicker": "Metodo",
-    "method.title": "Quattro passaggi per lavorare senza imprevisti.",
-    "method.step1.title": "Ascolto della richiesta",
-    "method.step1.copy": "Raccogliamo informazioni su merce, tempi, indirizzi e necessità operative.",
-    "method.step2.title": "Pianificazione",
-    "method.step2.copy": "Organizziamo ritiro, deposito o movimentazione in base alle priorità del cliente.",
-    "method.step3.title": "Esecuzione",
-    "method.step3.copy": "Gestiamo la merce con attenzione durante carico, scarico e trasferimento.",
-    "method.step4.title": "Aggiornamento",
-    "method.step4.copy": "Manteniamo una comunicazione semplice per sapere sempre a che punto è il lavoro.",
-    "operations.kicker": "Operatività",
-    "operations.title": "Supporto pratico nei momenti che contano.",
-    "operations.copy": "Lavoriamo al fianco del tuo team con procedure chiare e un servizio capace di adattarsi al ritmo dell'attività.",
-    "operations.item1.title": "Programmazione agile",
-    "operations.item1.copy": "Attività pianificate in base a priorità e scadenze.",
-    "operations.item2.title": "Referente chiaro",
-    "operations.item2.copy": "Comunicazioni dirette per decisioni più rapide.",
-    "operations.item3.title": "Cura operativa",
-    "operations.item3.copy": "Attenzione costante in ogni fase del lavoro.",
-    "operations.item4.title": "Continuità",
-    "operations.item4.copy": "Supporto affidabile per picchi o necessità ricorrenti.",
-    "operations.item5.title": "Flessibilità",
-    "operations.item5.copy": "Soluzioni adattate ai cambiamenti della tua attività.",
-    "sectors.kicker": "Settori",
-    "sectors.title": "Esperienza operativa al servizio di filiere diverse.",
-    "sectors.item1": "Produttori e fabbricanti",
-    "sectors.item2": "Magazzini e depositi",
-    "sectors.item3": "Distributori e fornitori",
-    "sectors.item4": "Aziende con merci in transito",
-    "sectors.item5": "Clienti con depositi temporanei",
-    "sectors.item6": "Flussi ricorrenti di ritiro e consegna",
-    "clients.kicker": "Clienti",
-    "clients.title": "Clienti con cui abbiamo già lavorato.",
-    "clients.copy": "Aziende che hanno già scelto i servizi di Frascarelli Trasporti.",
-    "cta.kicker": "Disponibilità operativa",
-    "cta.title": "Diamo continuità al tuo flusso logistico.",
-    "cta.button": "Scrivi una email",
-    "contact.kicker": "Contatti",
-    "contact.title": "Raccontaci cosa devi organizzare.",
-    "contact.copy": "Scrivici: valuteremo le tue necessità e ti proporremo un supporto operativo su misura.",
-    "contact.emailLabel": "Email",
-    "contact.addressLabel": "Sede",
-    "contact.vatLabel": "Partita IVA",
-    "contact.hoursLabel": "Orari",
-    "contact.hours": "Lunedì - venerdì, 08:00 - 17:00",
-    "footer.social": "Nessun profilo social ufficiale"
+    "nav.company": "Chi siamo", "nav.services": "Servizi", "nav.operations": "Operatività", "nav.sectors": "Settori", "nav.clients": "Clienti", "nav.contact": "Contatti",
+    "hero.eyebrow": "Last mile · Trasporto · Deposito", "hero.title": "La logistica che porta avanti il tuo business.", "hero.copy": "Dall'hub alla destinazione finale: processi precisi, persone affidabili e una rete che cresce insieme ai nostri partner.", "hero.cta": "Parliamo del tuo progetto", "hero.more": "Scopri Frascarelli", "hero.proof1": "consegne in un anno", "hero.proof2": "città italiane",
+    "about.kicker": "Chi siamo", "about.title": "Cresciamo facendo muovere ciò che conta.", "about.photo": "Il nostro magazzino, ogni giorno operativo.",
+    "about.p1": "Frascarelli Trasporti è un partner logistico specializzato nella gestione delle consegne last mile e nei servizi di trasporto, con un'organizzazione costruita su efficienza, puntualità e qualità.",
+    "about.p2": "Fondata nel 2022, l'azienda ha conosciuto una crescita costante e oggi opera in oltre 10 città italiane, collaborando con importanti operatori del settore logistico e gestendo migliaia di spedizioni destinate ai clienti finali.",
+    "about.p3": "Nel solo ultimo anno abbiamo completato oltre 350.000 consegne, un traguardo che testimonia la solidità dei nostri processi, la professionalità del nostro team e la fiducia che i nostri partner ripongono in noi.",
+    "about.p4": "La nostra missione è offrire soluzioni logistiche efficienti, flessibili e scalabili, contribuendo alla crescita dei nostri partner attraverso un servizio orientato all'eccellenza operativa.",
+    "stats.one.title": "Costruiamo il futuro", "stats.one.copy": "Oltre 4 anni di crescita costante.", "stats.two.title": "Consegne completate", "stats.two.copy": "Un traguardo raggiunto nel solo ultimo anno.", "stats.three.title": "Città coperte", "stats.three.copy": "Una presenza in continua espansione sul territorio italiano.",
+    "services.kicker": "Servizi", "services.title": "Una filiera, quattro competenze.", "services.intro": "Costruiamo ogni intervento sulle esigenze reali del flusso logistico, dal ritiro alla consegna finale.",
+    "services.transport.title": "Trasporti, consegna e ritiro", "services.transport.copy": "Ritiriamo la merce dal fabbricante e la consegniamo al cliente, coordinando tempi, percorsi e passaggi operativi.", "services.transport.p1": "Ritiro presso produttori e fornitori", "services.transport.p2": "Consegna verso clienti e magazzini", "services.transport.p3": "Finestre operative coordinate",
+    "services.loading.title": "Carico e scarico", "services.loading.copy": "Quando la merce arriva in magazzino, scarichiamo, organizziamo gli ordini e prepariamo il carico per la fase successiva.", "services.loading.p1": "Scarico merci in ingresso", "services.loading.p2": "Preparazione ordini e colli", "services.loading.p3": "Carico per consegna o trasferimento",
+    "services.storage.title": "Deposito", "services.storage.copy": "Custodiamo la merce per trasferimenti rapidi o periodi più lunghi, mantenendo ordine e controllo sugli spazi.", "services.storage.p1": "Deposito temporaneo per transito", "services.storage.p2": "Soluzioni per permanenze più lunghe", "services.storage.p3": "Merce organizzata e pronta a ripartire",
+    "services.lastmile.title": "Last mile", "services.lastmile.copy": "Gestiamo l'ultimo tratto della consegna, portando la merce dal punto logistico fino alla destinazione finale.", "services.lastmile.p1": "Consegne a clienti e punti vendita", "services.lastmile.p2": "Orari di consegna coordinati", "services.lastmile.p3": "Supporto operativo locale",
+    "operations.kicker": "Operatività", "operations.title": "Sul campo, quando serve.", "operations.copy": "Procedure chiare e un servizio capace di adattarsi al ritmo dell'attività, dai picchi stagionali ai flussi ricorrenti.", "operations.one.title": "Pianificazione agile", "operations.one.copy": "Priorità e scadenze sempre visibili.", "operations.two.title": "Contatto diretto", "operations.two.copy": "Comunicazione semplice, decisioni rapide.", "operations.three.title": "Continuità", "operations.three.copy": "Supporto affidabile, anche nei momenti intensi.", "operations.real": "Spazi reali. Lavoro concreto.",
+    "sectors.kicker": "Settori", "sectors.title": "La stessa precisione, in filiere diverse.", "sectors.copy": "Competenze operative che si adattano a prodotti, ritmi e destinazioni differenti.", "sectors.one": "Produttori e fabbricanti", "sectors.two": "Magazzini e depositi", "sectors.three": "Distribuzione e forniture", "sectors.four": "Merci in transito", "sectors.five": "Depositi temporanei", "sectors.six": "Flussi ricorrenti",
+    "clients.kicker": "Clienti e partner", "clients.title": "Relazioni costruite lungo tutta la filiera.", "clients.copy": "Esperienze, collaborazioni attuali e alleanze last mile che raccontano la nostra crescita.", "clients.past.label": "Esperienze", "clients.past.title": "Aziende con cui abbiamo collaborato", "clients.current.label": "Oggi", "clients.current.title": "I nostri attuali collaboratori", "clients.lastmile.label": "Rete nazionale", "clients.lastmile.title": "Le nostre principali alleanze per il last mile in tutta Italia", "clients.lastmile.copy": "Partner specializzati che ampliano la nostra capacità di consegna e la presenza sul territorio.",
+    "contact.kicker": "Contatti", "contact.title": "Diamo movimento alla tua prossima sfida.", "contact.copy": "Raccontaci cosa devi organizzare. Ti risponderemo con un supporto operativo costruito sulle tue esigenze.", "contact.action": "Scrivici ora", "contact.email": "Email", "contact.office": "Sede", "contact.hoursLabel": "Orari", "contact.hours": "Lunedì – venerdì\n08:00 – 17:00", "contact.vat": "Partita IVA", "footer.tagline": "Last mile e logistica per imprese che vogliono crescere."
   },
   pt: {
-    "nav.company": "Quem somos",
-    "nav.services": "Serviços",
-    "nav.method": "Método",
-    "nav.sectors": "Setores",
-    "nav.clients": "Clientes",
-    "nav.contact": "Contato",
-    "hero.eyebrow": "Logística prática para empresas",
-    "hero.title": "Sua mercadoria se move com ordem.",
-    "hero.copy": "A Frascarelli Trasporti acompanha os fluxos logísticos com precisão, pontualidade e uma organização fácil de gerenciar.",
-    "hero.cta": "Solicitar contato",
-    "quick.item1.title": "Prazos coordenados",
-    "quick.item1.copy": "Rotas e janelas operacionais bem planejadas.",
-    "quick.item2.title": "Apoio em campo",
-    "quick.item2.copy": "Presença prática nas atividades diárias.",
-    "quick.item3.title": "Espaços flexíveis",
-    "quick.item3.copy": "Soluções para necessidades breves ou contínuas.",
-    "intro.kicker": "Quem somos",
-    "intro.title": "Uma história construída na prática, um crescimento que continua.",
-    "intro.lede": "Todo grande projeto nasce de uma escolha corajosa. A Frascarelli Trasporti nasceu em 2022 da vontade de transformar determinação, sacrifício e paixão em uma empresa capaz de oferecer serviços logísticos confiáveis, eficientes e orientados à qualidade.",
-    "intro.copy1": "Graças ao compromisso constante, à paixão pelo nosso trabalho e à vontade de crescer, a empresa passou por uma rápida evolução. Hoje, nosso core business é a gestão das entregas de última milha, acompanhada por serviços de transporte, movimentação e armazenamento de mercadorias, além da reparação de paletes.",
-    "intro.copy2": "Os resultados alcançados confirmam nossa trajetória: mais de 350.000 entregas de pacotes realizadas no último ano, fruto de uma organização sólida e de uma equipe que trabalha todos os dias com profissionalismo e pontualidade.",
-    "intro.copy3": "Acreditamos que o crescimento nasce da coragem de enfrentar novos desafios: a vontade de construir algo grande sempre foi mais forte do que o medo de arriscar. É esse espírito que continua guiando a Frascarelli Trasporti rumo a novas conquistas.",
-    "intro.growth.eyebrow": "Nossa trajetória",
-    "intro.growth.title": "A coragem de crescer.",
-    "intro.growth.item1.title": "O início",
-    "intro.growth.item1.copy": "O começo de um projeto construído com determinação e paixão.",
-    "intro.growth.item2.title": "Entregas em um ano",
-    "intro.growth.item2.copy": "Pacotes entregues com profissionalismo, precisão e pontualidade.",
-    "intro.growth.item3.value": "Última milha",
-    "intro.growth.item3.title": "Nosso core business",
-    "intro.growth.item3.copy": "Uma gestão confiável da etapa final da entrega.",
-    "services.kicker": "Serviços",
-    "services.title": "Serviços construídos para suas necessidades logísticas.",
-    "services.transport.title": "Transporte, entrega e coleta",
-    "services.transport.copy": "Coletamos a mercadoria no fabricante e entregamos ao cliente, coordenando prazos, rotas e etapas operacionais.",
-    "services.transport.point1": "Coleta em produtores e fornecedores",
-    "services.transport.point2": "Entrega para clientes e armazéns",
-    "services.transport.point3": "Coordenação das janelas operacionais",
-    "services.loading.title": "Carga e descarga",
-    "services.loading.copy": "Quando a mercadoria chega ao armazém, descarregamos, organizamos os pedidos e preparamos a carga para a próxima etapa.",
-    "services.loading.point1": "Descarga de mercadorias recebidas",
-    "services.loading.point2": "Preparação de pedidos e volumes",
-    "services.loading.point3": "Carga para entrega ou transferência",
-    "services.storage.title": "Depósito",
-    "services.storage.copy": "Armazenamos mercadorias para transferências rápidas ou períodos mais longos, mantendo ordem e controle dos espaços.",
-    "services.storage.point1": "Depósito temporário para trânsito",
-    "services.storage.point2": "Soluções para permanências mais longas",
-    "services.storage.point3": "Organização da mercadoria pronta para sair",
-    "services.lastmile.title": "Last mile",
-    "services.lastmile.copy": "Gerenciamos a última etapa da entrega, levando a mercadoria do ponto logístico até o destino final.",
-    "services.lastmile.point1": "Entregas finais para clientes e pontos de venda",
-    "services.lastmile.point2": "Coordenação dos horários de entrega",
-    "services.lastmile.point3": "Apoio operacional para entregas locais",
-    "method.kicker": "Método",
-    "method.title": "Quatro etapas para trabalhar sem imprevistos.",
-    "method.step1.title": "Entendimento da solicitação",
-    "method.step1.copy": "Coletamos informações sobre mercadoria, prazos, endereços e necessidades operacionais.",
-    "method.step2.title": "Planejamento",
-    "method.step2.copy": "Organizamos coleta, depósito ou movimentação conforme as prioridades do cliente.",
-    "method.step3.title": "Execução",
-    "method.step3.copy": "Cuidamos da mercadoria com atenção durante carga, descarga e transferência.",
-    "method.step4.title": "Atualização",
-    "method.step4.copy": "Mantemos uma comunicação simples para acompanhar o andamento do trabalho.",
-    "operations.kicker": "Operação",
-    "operations.title": "Apoio prático nos momentos que importam.",
-    "operations.copy": "Trabalhamos junto à sua equipe com processos claros e um serviço que acompanha o ritmo da operação.",
-    "operations.item1.title": "Planejamento ágil",
-    "operations.item1.copy": "Atividades organizadas conforme prioridades e prazos.",
-    "operations.item2.title": "Contato direto",
-    "operations.item2.copy": "Comunicação objetiva para decisões mais rápidas.",
-    "operations.item3.title": "Cuidado operacional",
-    "operations.item3.copy": "Atenção constante em cada etapa do trabalho.",
-    "operations.item4.title": "Continuidade",
-    "operations.item4.copy": "Apoio confiável para picos ou demandas recorrentes.",
-    "operations.item5.title": "Flexibilidade",
-    "operations.item5.copy": "Soluções adaptadas às mudanças da sua operação.",
-    "sectors.kicker": "Setores",
-    "sectors.title": "Experiência operacional para diferentes cadeias produtivas.",
-    "sectors.item1": "Produtores e fabricantes",
-    "sectors.item2": "Armazéns e depósitos",
-    "sectors.item3": "Distribuidores e fornecedores",
-    "sectors.item4": "Empresas com mercadorias em trânsito",
-    "sectors.item5": "Clientes com depósitos temporários",
-    "sectors.item6": "Fluxos recorrentes de coleta e entrega",
-    "clients.kicker": "Clientes",
-    "clients.title": "Clientes com os quais já trabalhamos.",
-    "clients.copy": "Empresas que já escolheram os serviços da Frascarelli Trasporti.",
-    "cta.kicker": "Disponibilidade operacional",
-    "cta.title": "Dê continuidade ao seu fluxo logístico.",
-    "cta.button": "Enviar email",
-    "contact.kicker": "Contato",
-    "contact.title": "Conte o que você precisa organizar.",
-    "contact.copy": "Escreva para nós: avaliaremos sua necessidade e proporemos um apoio operacional sob medida.",
-    "contact.emailLabel": "Email",
-    "contact.addressLabel": "Endereço",
-    "contact.vatLabel": "Partita IVA",
-    "contact.hoursLabel": "Horário",
-    "contact.hours": "Segunda a sexta, 08:00 - 17:00",
-    "footer.social": "Sem perfis sociais oficiais"
+    "nav.company": "Quem somos", "nav.services": "Serviços", "nav.operations": "Operação", "nav.sectors": "Setores", "nav.clients": "Clientes", "nav.contact": "Contato",
+    "hero.eyebrow": "Última milha · Transporte · Armazenagem", "hero.title": "A logística que impulsiona o seu negócio.", "hero.copy": "Do hub ao destino final: processos precisos, pessoas confiáveis e uma rede que cresce junto com nossos parceiros.", "hero.cta": "Fale sobre seu projeto", "hero.more": "Conheça a Frascarelli", "hero.proof1": "entregas em um ano", "hero.proof2": "cidades italianas",
+    "about.kicker": "Quem somos", "about.title": "Crescemos movimentando o que importa.", "about.photo": "Nosso armazém, em operação todos os dias.",
+    "about.p1": "A Frascarelli Trasporti é uma parceira logística especializada na gestão de entregas de última milha e serviços de transporte, com uma organização construída sobre eficiência, pontualidade e qualidade.",
+    "about.p2": "Fundada em 2022, a empresa cresceu de forma constante e hoje opera em mais de 10 cidades italianas, colaborando com importantes operadores logísticos e gerenciando milhares de remessas destinadas aos clientes finais.",
+    "about.p3": "Somente no último ano concluímos mais de 350.000 entregas, um marco que demonstra a solidez dos nossos processos, o profissionalismo da nossa equipe e a confiança dos nossos parceiros.",
+    "about.p4": "Nossa missão é oferecer soluções logísticas eficientes, flexíveis e escaláveis, contribuindo para o crescimento dos nossos parceiros por meio de um serviço orientado à excelência operacional.",
+    "stats.one.title": "Construímos o futuro", "stats.one.copy": "Mais de 4 anos de crescimento constante.", "stats.two.title": "Entregas concluídas", "stats.two.copy": "Uma marca alcançada somente no último ano.", "stats.three.title": "Cidades atendidas", "stats.three.copy": "Uma presença em contínua expansão pelo território italiano.",
+    "services.kicker": "Serviços", "services.title": "Uma cadeia, quatro competências.", "services.intro": "Criamos cada operação de acordo com as necessidades reais do fluxo logístico, da coleta à entrega final.",
+    "services.transport.title": "Transporte, entrega e coleta", "services.transport.copy": "Coletamos a mercadoria no fabricante e a entregamos ao cliente, coordenando prazos, rotas e etapas operacionais.", "services.transport.p1": "Coleta em produtores e fornecedores", "services.transport.p2": "Entrega a clientes e armazéns", "services.transport.p3": "Janelas operacionais coordenadas",
+    "services.loading.title": "Carga e descarga", "services.loading.copy": "Quando a mercadoria chega ao armazém, descarregamos, organizamos os pedidos e preparamos a carga para a próxima etapa.", "services.loading.p1": "Descarga de mercadorias recebidas", "services.loading.p2": "Preparação de pedidos e volumes", "services.loading.p3": "Carga para entrega ou transferência",
+    "services.storage.title": "Armazenagem", "services.storage.copy": "Armazenamos mercadorias para transferências rápidas ou períodos mais longos, mantendo ordem e controle dos espaços.", "services.storage.p1": "Armazenagem temporária em trânsito", "services.storage.p2": "Soluções para períodos mais longos", "services.storage.p3": "Mercadoria organizada e pronta para sair",
+    "services.lastmile.title": "Última milha", "services.lastmile.copy": "Gerenciamos a etapa final da entrega, levando a mercadoria do ponto logístico até o destino final.", "services.lastmile.p1": "Entregas a clientes e pontos de venda", "services.lastmile.p2": "Horários de entrega coordenados", "services.lastmile.p3": "Suporte operacional local",
+    "operations.kicker": "Operação", "operations.title": "Em campo, quando é preciso.", "operations.copy": "Processos claros e um serviço capaz de acompanhar o ritmo da operação, dos picos sazonais aos fluxos recorrentes.", "operations.one.title": "Planejamento ágil", "operations.one.copy": "Prioridades e prazos sempre visíveis.", "operations.two.title": "Contato direto", "operations.two.copy": "Comunicação simples, decisões rápidas.", "operations.three.title": "Continuidade", "operations.three.copy": "Suporte confiável, mesmo nos momentos intensos.", "operations.real": "Espaços reais. Trabalho concreto.",
+    "sectors.kicker": "Setores", "sectors.title": "A mesma precisão em diferentes cadeias.", "sectors.copy": "Competências operacionais que se adaptam a produtos, ritmos e destinos diferentes.", "sectors.one": "Produtores e fabricantes", "sectors.two": "Armazéns e depósitos", "sectors.three": "Distribuição e fornecimento", "sectors.four": "Mercadorias em trânsito", "sectors.five": "Armazenagem temporária", "sectors.six": "Fluxos recorrentes",
+    "clients.kicker": "Clientes e parceiros", "clients.title": "Relações construídas em toda a cadeia.", "clients.copy": "Experiências, colaborações atuais e alianças de última milha que contam o nosso crescimento.", "clients.past.label": "Experiências", "clients.past.title": "Empresas com as quais já colaboramos", "clients.current.label": "Hoje", "clients.current.title": "Nossos atuais colaboradores", "clients.lastmile.label": "Rede nacional", "clients.lastmile.title": "Nossas principais alianças de última milha em toda a Itália", "clients.lastmile.copy": "Parceiros especializados que ampliam nossa capacidade de entrega e presença no território.",
+    "contact.kicker": "Contato", "contact.title": "Vamos movimentar o seu próximo desafio.", "contact.copy": "Conte o que você precisa organizar. Responderemos com um suporte operacional feito para suas necessidades.", "contact.action": "Escreva agora", "contact.email": "Email", "contact.office": "Endereço", "contact.hoursLabel": "Horário", "contact.hours": "Segunda – sexta\n08:00 – 17:00", "contact.vat": "Partita IVA", "footer.tagline": "Última milha e logística para empresas que querem crescer."
   },
   en: {
-    "nav.company": "About us",
-    "nav.services": "Services",
-    "nav.method": "Method",
-    "nav.sectors": "Sectors",
-    "nav.clients": "Clients",
-    "nav.contact": "Contact",
-    "hero.eyebrow": "Practical logistics for businesses",
-    "hero.title": "Goods moved with order.",
-    "hero.copy": "Frascarelli Trasporti keeps logistics flows precise, punctual and straightforward to manage.",
-    "hero.cta": "Request contact",
-    "quick.item1.title": "Coordinated timing",
-    "quick.item1.copy": "Well-planned routes and operating windows.",
-    "quick.item2.title": "Hands-on support",
-    "quick.item2.copy": "A practical presence in daily operations.",
-    "quick.item3.title": "Flexible space",
-    "quick.item3.copy": "Solutions for short-term or ongoing needs.",
-    "intro.kicker": "About us",
-    "intro.title": "A story built in the field, with growth that continues.",
-    "intro.lede": "Every great project begins with a courageous choice. Frascarelli Trasporti was founded in 2022 from the desire to turn determination, sacrifice and passion into a company capable of providing reliable, efficient and quality-focused logistics services.",
-    "intro.copy1": "Through constant commitment, passion for our work and the desire to grow, the company has evolved rapidly. Today, our core business is last-mile delivery management, supported by transport, goods handling and storage services, as well as pallet repair.",
-    "intro.copy2": "The results achieved confirm our progress: more than 350,000 parcel deliveries completed over the past year, made possible by a solid organization and a team that works every day with professionalism and punctuality.",
-    "intro.copy3": "We believe that growth comes from the courage to face new challenges: the desire to build something great has always been stronger than the fear of taking risks. This is the spirit that continues to guide Frascarelli Trasporti toward new milestones.",
-    "intro.growth.eyebrow": "Our journey",
-    "intro.growth.title": "The courage to grow.",
-    "intro.growth.item1.title": "The beginning",
-    "intro.growth.item1.copy": "The start of a project built with determination and passion.",
-    "intro.growth.item2.title": "Deliveries in one year",
-    "intro.growth.item2.copy": "Parcels delivered with professionalism, precision and punctuality.",
-    "intro.growth.item3.value": "Last mile",
-    "intro.growth.item3.title": "Our core business",
-    "intro.growth.item3.copy": "Reliable management of the final stage of delivery.",
-    "services.kicker": "Services",
-    "services.title": "Services built around your logistics needs.",
-    "services.transport.title": "Transport, delivery and pickup",
-    "services.transport.copy": "We collect goods from the manufacturer and deliver them to the customer, coordinating timing, routes and operational steps.",
-    "services.transport.point1": "Pickup from producers and suppliers",
-    "services.transport.point2": "Delivery to customers and warehouses",
-    "services.transport.point3": "Coordination of operating windows",
-    "services.loading.title": "Loading and unloading",
-    "services.loading.copy": "When goods arrive at the warehouse, we unload, organize orders and prepare the load for the next stage.",
-    "services.loading.point1": "Unloading incoming goods",
-    "services.loading.point2": "Preparing orders and packages",
-    "services.loading.point3": "Loading for delivery or transfer",
-    "services.storage.title": "Storage",
-    "services.storage.copy": "We store goods for quick transfers or longer periods, keeping spaces ordered and controlled.",
-    "services.storage.point1": "Temporary storage for transit",
-    "services.storage.point2": "Solutions for longer stays",
-    "services.storage.point3": "Organization of goods ready to move again",
-    "services.lastmile.title": "Last mile",
-    "services.lastmile.copy": "We manage the final delivery stage, moving goods from the logistics point to their final destination.",
-    "services.lastmile.point1": "Final deliveries to customers and retail points",
-    "services.lastmile.point2": "Coordination of delivery time windows",
-    "services.lastmile.point3": "Operational support for local deliveries",
-    "method.kicker": "Method",
-    "method.title": "Four steps for smooth, predictable work.",
-    "method.step1.title": "Request review",
-    "method.step1.copy": "We collect information about goods, timing, addresses and operational needs.",
-    "method.step2.title": "Planning",
-    "method.step2.copy": "We organize pickup, storage or handling according to the customer's priorities.",
-    "method.step3.title": "Execution",
-    "method.step3.copy": "We handle goods carefully during loading, unloading and transfer.",
-    "method.step4.title": "Updates",
-    "method.step4.copy": "We keep communication simple so the progress of the work is always clear.",
-    "operations.kicker": "Operations",
-    "operations.title": "Practical support when it matters most.",
-    "operations.copy": "We work alongside your team with clear processes and a service that adapts to the pace of your operation.",
-    "operations.item1.title": "Agile planning",
-    "operations.item1.copy": "Activities organized around priorities and deadlines.",
-    "operations.item2.title": "Direct contact",
-    "operations.item2.copy": "Straightforward communication for faster decisions.",
-    "operations.item3.title": "Operational care",
-    "operations.item3.copy": "Consistent attention throughout every stage of the work.",
-    "operations.item4.title": "Continuity",
-    "operations.item4.copy": "Reliable support for peaks or recurring needs.",
-    "operations.item5.title": "Flexibility",
-    "operations.item5.copy": "Solutions adapted to changes in your operation.",
-    "sectors.kicker": "Sectors",
-    "sectors.title": "Operational experience across different supply chains.",
-    "sectors.item1": "Producers and manufacturers",
-    "sectors.item2": "Warehouses and storage sites",
-    "sectors.item3": "Distributors and suppliers",
-    "sectors.item4": "Companies with goods in transit",
-    "sectors.item5": "Clients with temporary storage needs",
-    "sectors.item6": "Recurring pickup and delivery flows",
-    "clients.kicker": "Clients",
-    "clients.title": "Clients we have worked with.",
-    "clients.copy": "Companies that have already chosen Frascarelli Trasporti's services.",
-    "cta.kicker": "Operational availability",
-    "cta.title": "Keep your logistics flow moving.",
-    "cta.button": "Send an email",
-    "contact.kicker": "Contact",
-    "contact.title": "Tell us what you need to organize.",
-    "contact.copy": "Write to us: we will assess your needs and propose tailored operational support.",
-    "contact.emailLabel": "Email",
-    "contact.addressLabel": "Address",
-    "contact.vatLabel": "VAT number",
-    "contact.hoursLabel": "Hours",
-    "contact.hours": "Monday - Friday, 08:00 - 17:00",
-    "footer.social": "No official social profiles"
+    "nav.company": "About us", "nav.services": "Services", "nav.operations": "Operations", "nav.sectors": "Sectors", "nav.clients": "Clients", "nav.contact": "Contact",
+    "hero.eyebrow": "Last mile · Transport · Storage", "hero.title": "Logistics that moves your business forward.", "hero.copy": "From hub to final destination: precise processes, reliable people and a network that grows with our partners.", "hero.cta": "Tell us about your project", "hero.more": "Discover Frascarelli", "hero.proof1": "deliveries in one year", "hero.proof2": "Italian cities",
+    "about.kicker": "About us", "about.title": "We grow by moving what matters.", "about.photo": "Our warehouse, operational every day.",
+    "about.p1": "Frascarelli Trasporti is a logistics partner specializing in last-mile delivery management and transport services, with an organization built around efficiency, punctuality and quality.",
+    "about.p2": "Founded in 2022, the company has grown steadily and now operates in more than 10 Italian cities, working with leading logistics operators and managing thousands of shipments for end customers.",
+    "about.p3": "In the past year alone, we completed more than 350,000 deliveries — a milestone that reflects the strength of our processes, the professionalism of our team and the trust of our partners.",
+    "about.p4": "Our mission is to offer efficient, flexible and scalable logistics solutions, helping our partners grow through a service focused on operational excellence.",
+    "stats.one.title": "Building the future", "stats.one.copy": "More than 4 years of steady growth.", "stats.two.title": "Completed deliveries", "stats.two.copy": "A milestone achieved in the past year alone.", "stats.three.title": "Cities covered", "stats.three.copy": "A presence that keeps expanding across Italy.",
+    "services.kicker": "Services", "services.title": "One supply chain, four capabilities.", "services.intro": "We build every operation around the real needs of the logistics flow, from pickup to final delivery.",
+    "services.transport.title": "Transport, delivery and pickup", "services.transport.copy": "We collect goods from the manufacturer and deliver them to the customer, coordinating timing, routes and operational steps.", "services.transport.p1": "Pickup from producers and suppliers", "services.transport.p2": "Delivery to customers and warehouses", "services.transport.p3": "Coordinated operating windows",
+    "services.loading.title": "Loading and unloading", "services.loading.copy": "When goods reach the warehouse, we unload them, organize orders and prepare each load for the next stage.", "services.loading.p1": "Unloading incoming goods", "services.loading.p2": "Order and parcel preparation", "services.loading.p3": "Loading for delivery or transfer",
+    "services.storage.title": "Storage", "services.storage.copy": "We store goods for quick transfers or longer periods while keeping spaces organized and controlled.", "services.storage.p1": "Temporary transit storage", "services.storage.p2": "Solutions for longer stays", "services.storage.p3": "Goods organized and ready to move",
+    "services.lastmile.title": "Last mile", "services.lastmile.copy": "We manage the final delivery leg, moving goods from the logistics point to their final destination.", "services.lastmile.p1": "Deliveries to customers and retail points", "services.lastmile.p2": "Coordinated delivery times", "services.lastmile.p3": "Local operational support",
+    "operations.kicker": "Operations", "operations.title": "On the ground, when it matters.", "operations.copy": "Clear procedures and a service that adapts to the pace of business, from seasonal peaks to recurring flows.", "operations.one.title": "Agile planning", "operations.one.copy": "Priorities and deadlines always visible.", "operations.two.title": "Direct contact", "operations.two.copy": "Simple communication, faster decisions.", "operations.three.title": "Continuity", "operations.three.copy": "Reliable support, even at the busiest times.", "operations.real": "Real spaces. Practical work.",
+    "sectors.kicker": "Sectors", "sectors.title": "The same precision across different supply chains.", "sectors.copy": "Operational expertise that adapts to different products, rhythms and destinations.", "sectors.one": "Producers and manufacturers", "sectors.two": "Warehouses and storage", "sectors.three": "Distribution and supply", "sectors.four": "Goods in transit", "sectors.five": "Temporary storage", "sectors.six": "Recurring flows",
+    "clients.kicker": "Clients and partners", "clients.title": "Relationships built across the supply chain.", "clients.copy": "Past experience, current collaborations and last-mile alliances that tell the story of our growth.", "clients.past.label": "Experience", "clients.past.title": "Companies we have worked with", "clients.current.label": "Today", "clients.current.title": "Our current collaborators", "clients.lastmile.label": "National network", "clients.lastmile.title": "Our main last-mile alliances across Italy", "clients.lastmile.copy": "Specialist partners that expand our delivery capacity and reach across the country.",
+    "contact.kicker": "Contact", "contact.title": "Let's move your next challenge forward.", "contact.copy": "Tell us what you need to organize. We will respond with operational support tailored to your needs.", "contact.action": "Write to us", "contact.email": "Email", "contact.office": "Office", "contact.hoursLabel": "Hours", "contact.hours": "Monday – Friday\n08:00 – 17:00", "contact.vat": "VAT number", "footer.tagline": "Last-mile delivery and logistics for businesses ready to grow."
   }
 };
 
 const languageButtons = document.querySelectorAll(".lang-button");
 const translatedNodes = document.querySelectorAll("[data-i18n]");
-const seoTranslations = {
-  it: {
-    title: "Frascarelli Trasporti | Trasporti, Magazzino e Deposito",
-    description:
-      "Frascarelli Trasporti ad Abbiategrasso offre trasporti, ritiro e consegna merci, carico e scarico, deposito e servizi last mile per aziende."
-  },
-  pt: {
-    title: "Frascarelli Trasporti | Transporte, Armazém e Depósito",
-    description:
-      "Frascarelli Trasporti em Abbiategrasso oferece transporte, coleta e entrega, carga e descarga, depósito e last mile para empresas."
-  },
-  en: {
-    title: "Frascarelli Trasporti | Transport, Warehouse and Storage",
-    description:
-      "Frascarelli Trasporti in Abbiategrasso offers transport, pickup and delivery, loading and unloading, storage and last mile services for companies."
-  }
+const menuButton = document.querySelector(".menu-toggle");
+const mainNav = document.querySelector(".main-nav");
+const header = document.querySelector("[data-header]");
+
+const seo = {
+  it: ["Frascarelli Trasporti | Last mile e logistica", "Frascarelli Trasporti: last mile, trasporto, movimentazione e deposito merci in oltre 10 città italiane."],
+  pt: ["Frascarelli Trasporti | Última milha e logística", "Última milha, transporte, movimentação e armazenagem em mais de 10 cidades italianas."],
+  en: ["Frascarelli Trasporti | Last-mile delivery and logistics", "Last-mile delivery, transport, handling and storage across more than 10 Italian cities."]
 };
 
-function updateMeta(language) {
-  const seo = seoTranslations[language] || seoTranslations.it;
-  const description = document.querySelector('meta[name="description"]');
-  const ogTitle = document.querySelector('meta[property="og:title"]');
-  const ogDescription = document.querySelector('meta[property="og:description"]');
-  const twitterTitle = document.querySelector('meta[name="twitter:title"]');
-  const twitterDescription = document.querySelector('meta[name="twitter:description"]');
-
-  document.title = seo.title;
-  if (description) description.setAttribute("content", seo.description);
-  if (ogTitle) ogTitle.setAttribute("content", seo.title);
-  if (ogDescription) ogDescription.setAttribute("content", seo.description);
-  if (twitterTitle) twitterTitle.setAttribute("content", seo.title);
-  if (twitterDescription) twitterDescription.setAttribute("content", seo.description);
-}
-
-function setLanguage(language, shouldUpdateUrl = true) {
-  const dictionary = translations[language] || translations.it;
+function setLanguage(language, updateUrl = true) {
+  const selected = translations[language] ? language : "it";
+  const dictionary = translations[selected];
 
   translatedNodes.forEach((node) => {
-    const key = node.dataset.i18n;
-    if (dictionary[key]) {
-      node.textContent = dictionary[key];
-    }
+    const value = dictionary[node.dataset.i18n];
+    if (value) node.textContent = value;
   });
 
   languageButtons.forEach((button) => {
-    const isActive = button.dataset.lang === language;
-    button.classList.toggle("active", isActive);
-    button.setAttribute("aria-pressed", String(isActive));
+    const active = button.dataset.lang === selected;
+    button.classList.toggle("active", active);
+    button.setAttribute("aria-pressed", String(active));
   });
 
-  document.documentElement.lang = language === "pt" ? "pt-BR" : language;
-  updateMeta(language);
-  localStorage.setItem("fr-trasporti-language", language);
+  document.documentElement.lang = selected === "pt" ? "pt-BR" : selected;
+  document.title = seo[selected][0];
+  document.querySelector('meta[name="description"]')?.setAttribute("content", seo[selected][1]);
+  document.querySelector('meta[property="og:title"]')?.setAttribute("content", seo[selected][0]);
+  document.querySelector('meta[property="og:description"]')?.setAttribute("content", seo[selected][1]);
+  localStorage.setItem("fr-language", selected);
 
-  if (shouldUpdateUrl) {
-    const url = new URL(window.location);
-    url.searchParams.set("lang", language);
-    window.history.replaceState({}, "", url);
+  if (updateUrl) {
+    const url = new URL(window.location.href);
+    url.searchParams.set("lang", selected);
+    history.replaceState({}, "", url);
   }
 }
 
-languageButtons.forEach((button) => {
-  button.addEventListener("click", () => setLanguage(button.dataset.lang));
+function closeMenu() {
+  mainNav.classList.remove("open");
+  menuButton.setAttribute("aria-expanded", "false");
+  document.body.classList.remove("menu-open");
+}
+
+languageButtons.forEach((button) => button.addEventListener("click", () => setLanguage(button.dataset.lang)));
+menuButton.addEventListener("click", () => {
+  const open = menuButton.getAttribute("aria-expanded") === "true";
+  menuButton.setAttribute("aria-expanded", String(!open));
+  mainNav.classList.toggle("open", !open);
+  document.body.classList.toggle("menu-open", !open);
 });
+mainNav.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
+
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+document.querySelectorAll(".reveal").forEach((node) => revealObserver.observe(node));
+
+const sections = document.querySelectorAll("main section[id]");
+const navLinks = document.querySelectorAll('.main-nav a[href^="#"]');
+const sectionObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
+    navLinks.forEach((link) => link.classList.toggle("active", link.getAttribute("href") === `#${entry.target.id}`));
+  });
+}, { rootMargin: "-35% 0px -55%", threshold: 0 });
+sections.forEach((section) => sectionObserver.observe(section));
+
+window.addEventListener("scroll", () => header.classList.toggle("scrolled", window.scrollY > 24), { passive: true });
+window.addEventListener("resize", () => { if (window.innerWidth > 820) closeMenu(); });
+window.addEventListener("load", () => {
+  if (!window.location.hash) return;
+  window.setTimeout(() => document.querySelector(window.location.hash)?.scrollIntoView(), 80);
+});
+document.querySelector("[data-year]").textContent = new Date().getFullYear();
 
 const params = new URLSearchParams(window.location.search);
-const requestedLanguage = params.get("lang");
-const initialLanguage = translations[requestedLanguage] ? requestedLanguage : localStorage.getItem("fr-trasporti-language") || "it";
+const requested = params.get("lang");
+const saved = localStorage.getItem("fr-language");
+setLanguage(translations[requested] ? requested : (translations[saved] ? saved : "it"), false);
 
-setLanguage(initialLanguage, false);
+if (window.location.hash) {
+  document.querySelector(window.location.hash)?.scrollIntoView();
+}
