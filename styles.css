@@ -1219,7 +1219,7 @@ svg {
   }
 
   .hero-shade {
-    background: linear-gradient(180deg, rgba(244, 247, 245, .97) 0%, rgba(244, 247, 245, .87) 45%, rgba(244, 247, 245, .15) 75%);
+    background: linear-gradient(180deg, rgba(244, 247, 245, .97) 0%, rgba(244, 247, 245, .94) 55%, rgba(244, 247, 245, .8) 85%, rgba(244, 247, 245, .55) 100%);
   }
 
   .hero-content {
