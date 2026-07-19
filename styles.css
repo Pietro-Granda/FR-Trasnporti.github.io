@@ -99,6 +99,11 @@ svg {
 
 .site-header.scrolled {
   height: 76px;
+  border-bottom-color: var(--line);
+  background: rgba(255, 255, 255, .88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 12px 30px rgba(17, 24, 20, .06);
 }
 
 .brand {
