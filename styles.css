@@ -188,6 +188,7 @@ svg {
   position: relative;
   min-height: 850px;
   height: 100vh;
+  max-height: 980px;
   overflow: hidden;
   color: var(--ink);
   background: #e9eeeb;
