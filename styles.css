@@ -23,6 +23,7 @@ html {
 
 body {
   margin: 0;
+  overflow-x: hidden;
   color: var(--ink);
   background: var(--white);
   font-family: var(--font-body);
@@ -932,6 +933,12 @@ svg {
   font-size: 1.3rem;
 }
 
+.email-box b svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2;
+}
+
 .contact-details {
   align-self: end;
   border-top: 1px solid rgba(255, 255, 255, .13);
@@ -1637,11 +1644,32 @@ svg {
 
   .provinces-grid {
     grid-template-columns: repeat(3, 1fr);
+    max-height: none;
+    overflow-y: visible;
+    padding-right: 0;
   }
 }
 
 @media (max-width: 560px) {
+  .map-container {
+    height: 320px;
+  }
+
+  .provinces-list {
+    padding: 20px;
+  }
+
   .provinces-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 380px) {
+  .map-container {
+    height: 280px;
+  }
+
+  .provinces-grid {
+    grid-template-columns: 1fr;
   }
 }

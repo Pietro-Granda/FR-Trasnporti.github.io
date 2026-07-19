@@ -37,7 +37,10 @@ function setupMap() {
     if (!mapElement) return;
 
     // Create map centered on Italy
-    map = L.map('map').setView([41.8719, 12.5674], 6);
+    map = L.map('map', {
+        scrollWheelZoom: false,
+        tap: true
+    }).setView([41.8719, 12.5674], 6);
 
     // Add tile layer
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -47,6 +50,32 @@ function setupMap() {
             filter: 'brightness(0.95) contrast(1.05)'
         }
     }).addTo(map);
+
+    // Re-enable scroll-to-zoom only once the user has intentionally
+    // interacted with the map, so mouse-wheel page scrolling never
+    // gets trapped when the map is small (tablet/mobile layouts).
+    map.once('click focus', () => map.scrollWheelZoom.enable());
+
+    // Leaflet caches the container size at init time and never checks
+    // it again on its own. On this page the map container's size
+    // changes across breakpoints (grid stacking, height changes) and
+    // on orientation change / browser resize, which left the map
+    // showing blank/grey tiles or a misaligned view at most screen
+    // sizes. Keep it in sync with the real container size.
+    const refreshMapSize = () => {
+        if (map) map.invalidateSize();
+    };
+
+    if ('ResizeObserver' in window) {
+        new ResizeObserver(refreshMapSize).observe(mapElement);
+    } else {
+        window.addEventListener('resize', refreshMapSize);
+        window.addEventListener('orientationchange', refreshMapSize);
+    }
+
+    // Fonts/images loading after first paint can still shift layout;
+    // double-check the size shortly after setup too.
+    window.setTimeout(refreshMapSize, 300);
 
     // Add markers for each province
     Object.keys(provincesData).forEach(provinceKey => {
