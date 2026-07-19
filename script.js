@@ -134,7 +134,10 @@ const sectionObserver = new IntersectionObserver((entries) => {
 }, { rootMargin: "-35% 0px -55%", threshold: 0 });
 sections.forEach((section) => sectionObserver.observe(section));
 
-window.addEventListener("scroll", () => header.classList.toggle("scrolled", window.scrollY > 24), { passive: true });
+const syncHeaderScrolled = () => header.classList.toggle("scrolled", window.scrollY > 24);
+syncHeaderScrolled();
+window.addEventListener("scroll", syncHeaderScrolled, { passive: true });
+window.addEventListener("pageshow", syncHeaderScrolled);
 window.addEventListener("resize", () => { if (window.innerWidth > 820) closeMenu(); });
 window.addEventListener("load", () => {
   if (!window.location.hash) return;
