@@ -1505,16 +1505,12 @@ svg {
 
 .map-container {
   position: relative;
+  width: 100%;
   height: 550px;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--white);
-}
-
-#map {
-  width: 100%;
-  height: 100%;
 }
 
 .leaflet-container {
