@@ -520,7 +520,7 @@ svg {
   bottom: -50px;
   width: 130px;
   height: 130px;
-  border: 24px solid var(--soft);
+  border: 24px solid rgba(17, 24, 20, .05);
   border-radius: 50%;
 }
 
