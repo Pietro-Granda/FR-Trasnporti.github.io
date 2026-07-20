@@ -107,8 +107,8 @@ svg {
 }
 
 .brand {
-  width: 134px;
-  height: 64px;
+  width: 116px;
+  height: 56px;
   display: grid;
   place-items: center;
 }
@@ -200,6 +200,7 @@ svg {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: 50% 60%;
 }
 
 .hero-shade {
@@ -352,7 +353,9 @@ svg {
     inset: auto;
     width: 100%;
     height: 70vh;
+    min-height: 260px;
     max-height: 640px;
+    object-position: 50% 60%;
   }
 
   .hero-shade {
@@ -1099,8 +1102,8 @@ svg {
   }
 
   .brand {
-    width: 110px;
-    height: 58px;
+    width: 96px;
+    height: 50px;
   }
 
   .site-header>.brand {
@@ -1209,9 +1212,9 @@ svg {
     inset: auto;
     width: 100%;
     height: 46vh;
-    min-height: 320px;
+    min-height: 240px;
     max-height: 480px;
-    object-position: 50% center;
+    object-position: 50% 65%;
   }
 
   .hero-shade {
@@ -1322,7 +1325,7 @@ svg {
   }
 
   .brand {
-    width: 92px;
+    width: 80px;
   }
 
   .language-switch {

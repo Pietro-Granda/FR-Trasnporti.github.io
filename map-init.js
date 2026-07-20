@@ -4,6 +4,7 @@ const provincesData = {
     'verbania': { lat: 45.933, lng: 8.560, name: 'VERBANIA', region: 'Piemonte' },
     'novara': { lat: 45.447, lng: 8.627, name: 'NOVARA', region: 'Piemonte' },
     'alessandria': { lat: 44.913, lng: 8.618, name: 'ALESSANDRIA', region: 'Piemonte' },
+    'vercelli': { lat: 45.322, lng: 8.423, name: 'VERCELLI', region: 'Piemonte' },
     'milano': { lat: 45.465, lng: 9.188, name: 'MILANO', region: 'Lombardia' },
     'pavia': { lat: 45.191, lng: 9.158, name: 'PAVIA', region: 'Lombardia' },
     'padova': { lat: 45.408, lng: 11.877, name: 'PADOVA', region: 'Veneto' },
