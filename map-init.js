@@ -1,4 +1,4 @@
-// Province data with coordinates (center of each province)
+// Province data with coordinates (center of each province, used for the locator dot)
 const provincesData = {
     'cuneo': { lat: 44.389, lng: 7.541, name: 'CUNEO', region: 'Piemonte' },
     'verbania': { lat: 45.933, lng: 8.560, name: 'VERBANIA', region: 'Piemonte' },
@@ -20,7 +20,26 @@ const provincesData = {
     'siracusa': { lat: 37.265, lng: 15.298, name: 'SIRACUSA', region: 'Sicilia' }
 };
 
+const PROVINCE_BOUNDARIES_URL = 'assets/data/it-provinces.geojson';
+
+const AREA_STYLE = {
+    color: '#0a7d49',
+    weight: 1.5,
+    opacity: 0.85,
+    fillColor: '#25b66a',
+    fillOpacity: 0.25
+};
+
+const AREA_STYLE_ACTIVE = {
+    color: '#0a7d49',
+    weight: 2,
+    opacity: 1,
+    fillColor: '#25b66a',
+    fillOpacity: 0.5
+};
+
 let map = null;
+let areas = {};
 let markers = {};
 
 // Initialize map when DOM is ready
@@ -77,39 +96,58 @@ function setupMap() {
     // double-check the size shortly after setup too.
     window.setTimeout(refreshMapSize, 300);
 
-    // Add markers for each province
+    // Add a locator dot for each province straight away, so hover/click
+    // from the sidebar list works even before the boundary shapes load.
     Object.keys(provincesData).forEach(provinceKey => {
         const data = provincesData[provinceKey];
         const marker = L.circleMarker(
             [data.lat, data.lng],
             {
-                radius: 8,
-                fillColor: '#0a7d49',
-                color: '#fff',
+                radius: 5,
+                fillColor: '#fff',
+                color: '#0a7d49',
                 weight: 2,
                 opacity: 1,
-                fillOpacity: 0.8
+                fillOpacity: 1
             }
         ).addTo(map);
 
-        // Popup content
-        const popup = L.popup()
-            .setContent(`<h4>${data.name}</h4><p>${data.region}</p>`);
-
+        const popup = L.popup().setContent(`<h4>${data.name}</h4><p>${data.region}</p>`);
         marker.bindPopup(popup);
 
-        // Interaction
-        marker.on('click', () => {
-            const item = document.querySelector(`[data-province="${provinceKey}"]`);
-            if (item) {
-                document.querySelectorAll('.province-item').forEach(el => el.classList.remove('active'));
-                item.classList.add('active');
-                item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-            }
-        });
+        marker.on('click', () => selectProvince(provinceKey));
 
         markers[provinceKey] = marker;
     });
+
+    // Draw the actual province boundaries so the map shows the whole
+    // area covered, not just a point.
+    fetch(PROVINCE_BOUNDARIES_URL)
+        .then(res => res.json())
+        .then(geojson => {
+            L.geoJSON(geojson, {
+                style: AREA_STYLE,
+                onEachFeature: (feature, layer) => {
+                    const provinceKey = feature.properties.province;
+                    const data = provincesData[provinceKey];
+                    if (!data) return;
+
+                    areas[provinceKey] = layer;
+                    layer.bindPopup(`<h4>${data.name}</h4><p>${data.region}</p>`);
+
+                    layer.on('mouseover', () => highlightProvince(provinceKey));
+                    layer.on('mouseout', () => unhighlightProvince(provinceKey));
+                    layer.on('click', () => selectProvince(provinceKey));
+
+                    // Keep the locator dot above the shape.
+                    if (markers[provinceKey]) markers[provinceKey].bringToFront();
+                }
+            }).addTo(map);
+        })
+        .catch(() => {
+            // If the boundaries fail to load, the locator dots added
+            // above still make every covered province clickable.
+        });
 
     // Province items interaction
     document.querySelectorAll('.province-item').forEach(item => {
@@ -117,36 +155,49 @@ function setupMap() {
 
         item.addEventListener('mouseenter', () => {
             item.classList.add('active');
-            if (markers[provinceKey]) {
-                markers[provinceKey].setStyle({
-                    fillColor: '#25b66a',
-                    radius: 10
-                });
-            }
+            highlightProvince(provinceKey);
         });
 
         item.addEventListener('mouseleave', () => {
             item.classList.remove('active');
-            if (markers[provinceKey]) {
-                markers[provinceKey].setStyle({
-                    fillColor: '#0a7d49',
-                    radius: 8
-                });
-            }
+            unhighlightProvince(provinceKey);
         });
 
         item.addEventListener('click', (e) => {
             e.preventDefault();
-            document.querySelectorAll('.province-item').forEach(el => el.classList.remove('active'));
-            item.classList.add('active');
-
-            if (markers[provinceKey]) {
-                const coord = provincesData[provinceKey];
-                map.flyTo([coord.lat, coord.lng], 8, { duration: 1 });
-                markers[provinceKey].openPopup();
-            }
+            selectProvince(provinceKey);
         });
     });
+}
+
+function highlightProvince(provinceKey) {
+    if (areas[provinceKey]) areas[provinceKey].setStyle(AREA_STYLE_ACTIVE);
+    if (markers[provinceKey]) markers[provinceKey].setStyle({ radius: 7 });
+}
+
+function unhighlightProvince(provinceKey) {
+    if (areas[provinceKey]) areas[provinceKey].setStyle(AREA_STYLE);
+    if (markers[provinceKey]) markers[provinceKey].setStyle({ radius: 5 });
+}
+
+function selectProvince(provinceKey) {
+    const coord = provincesData[provinceKey];
+    if (!coord) return;
+
+    document.querySelectorAll('.province-item').forEach(el => el.classList.remove('active'));
+    const item = document.querySelector(`[data-province="${provinceKey}"]`);
+    if (item) {
+        item.classList.add('active');
+        item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    if (areas[provinceKey]) {
+        map.fitBounds(areas[provinceKey].getBounds(), { maxZoom: 9, duration: 1 });
+    } else {
+        map.flyTo([coord.lat, coord.lng], 8, { duration: 1 });
+    }
+
+    if (markers[provinceKey]) markers[provinceKey].openPopup();
 }
 
 // Initialize when Leaflet is ready
