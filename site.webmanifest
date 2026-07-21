@@ -10,7 +10,7 @@
   "lang": "it",
   "icons": [
     {
-      "src": "assets/logo-main.png",
+      "src": "assets/images/logo-main.png",
       "sizes": "440x253",
       "type": "image/png",
       "purpose": "any"
